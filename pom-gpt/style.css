@@ -1,5 +1,6 @@
 body {
 	background-color: #343541;
+	margin: 0;
 }
 
 .form-container {
@@ -10,7 +11,7 @@ body {
 	justify-content: center;
 }
 
-.message-box {
+.message-input {
 	padding: 8px;
 	background-color: #40414F;
 	width: 70%;
@@ -20,7 +21,7 @@ body {
 	color: #d1d5db;
 }
 
-.message-box:focus {
+.message-input:focus {
 	outline: none;
 }
 
@@ -28,4 +29,35 @@ body {
 	color: #f9f9f9;
 	display: flex;
 	justify-content: center;
+}
+
+#chat {
+	margin-top: 1.5em;
+	width: 100%;
+}
+
+.message-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.message-container:nth-child(odd) {
+	background-color: #575868;
+}
+
+.message-inner {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+}
+
+.message-inner > * {
+	padding: 0 8px;
+	margin: 16px 0;
+}
+
+.message-inner-txt {
+	color: #e3e3e3;
+	word-break: break-all;
 }
